@@ -23,24 +23,7 @@
 }
 
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
-    /* Styles */
-    html{
-        font-size: 30%;
-    }
 
-    .inline-flex{
-        display:block;
-    }
-
-    .header-text{
-        padding-bottom:.5rem;
-    }
-
-    .radio-container{
-        padding-left:3rem;
-    }
-}
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 320px) {
