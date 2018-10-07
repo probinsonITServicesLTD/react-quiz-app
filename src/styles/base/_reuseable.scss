@@ -1,0 +1,32 @@
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.column{
+    width: $screen-width / 2;
+    max-width: $screen-width / 2;
+    min-width: $screen-width / 2;
+}
+
+.inline-flex{
+    display: inline-flex;
+}
+
+.black-bg{
+    background: $mat-black;
+}
+
+.fullscreenwidth{
+    width: $screen-width;
+    max-width: $screen-width;
+    min-width: $screen-width;
+}
+
+.white-text{
+    color:white;
+}
+
+.margin-bottom5rem{
+    margin-bottom:5rem;
+}

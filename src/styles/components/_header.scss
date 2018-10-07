@@ -1,18 +1,13 @@
-.header{
-    background: $mat-black;
+.header-text{
     color: orange;
-    margin-bottom: 5rem;
-    width:70%;
-    height:100px;
-    padding-top:1rem;
+    padding-top:$padding3rem;
+    padding-bottom:$padding3rem;
+    padding-left:$padding3rem;
+    font-size: $ml-size;
 }
 
-.header__title{
-    font-size:$m-size;
-    margin:0;
-    padding-left:5rem;
-    display:inline;
-}
+
+
 
 
 

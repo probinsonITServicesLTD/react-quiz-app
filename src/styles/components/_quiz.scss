@@ -1,17 +1,15 @@
 .question{
     background: white;
-    border-radius:15px;
-    height:200px;
-    margin-bottom:10px;
-    width:800px;
-    max-width: 800px;
-    min-width: 800px;
+    border-radius:1.5rem;
+    height: 25rem;
+    margin-bottom:$padding2rem;
     text-align: center;
+
 }
 
 .question span{
-    padding:20px;
-    font-size: 40px;
+    padding:$padding2rem;
+    font-size: $ll-size;
     color:black;
     text-align: center;
     display: inline-block;
@@ -21,17 +19,18 @@
 .options{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .base{
-    flex: 45%;
+    flex: 0 0 47.5%;
     color:white;
-    margin:10px;
-    border-radius: 10px;
+    margin:$padding1rem;
+    border-radius: $padding1rem;
     border: none;
-    height:50px;
-    font-size: $m-size;
-    width:140px;
+    height:6rem;
+    font-size: $ml-size;
+    width:40rem;
 }
 
 .option{
@@ -69,17 +68,6 @@
     animation: glow-red 2s normal forwards;
 }
 
-/*
-.answer-false:after{
-    position: absolute;
-    content:"\1F5D9";
-    color:black;
-    right:0px;
-    font-size:100px;
-    top:-40px;
-}
-
-*/
 
 .answer-true{
     position: relative;
@@ -92,7 +80,7 @@
     content:"\2714";
     color:green;
     right:0px;
-    font-size:100px;
-    top:-25px;
+    font-size:10rem;
+    top:-2.5rem;
 }
 

@@ -5,6 +5,7 @@ import Categories from './components/Categories';
 import ModalWindow from './components/ModalWindow';
 
 
+
 export default class App extends React.Component{    
 
     state = {
@@ -121,7 +122,7 @@ export default class App extends React.Component{
                     }
                 });  
             }).then(()=>{
-                //pause for 1 seconds before next quix
+                //pause for 2 seconds before next quiz
                 setTimeout(()=> {  
                     this.setState((previousState)=>{     
                         return{
@@ -129,7 +130,7 @@ export default class App extends React.Component{
                         }                
                     });
                     this.beginQuiz(this.state.currentQuizNumber);
-                }, 1000);
+                }, 3000);
             })
         }
     }
@@ -162,11 +163,9 @@ export default class App extends React.Component{
                 <Header title={'Welcome to the Movies and TV Shows Quiz App'}
                     score={this.state.score}
                     questionCounter={this.state.questionCounter}       
-                    handleSetCategory={this.handleSetCategory}            
-                />
-                <Categories 
+                    handleSetCategory={this.handleSetCategory}           
                     handleSetMoviesOrTVShows={this.handleSetMoviesOrTVShows}
-                    handleSetDecade={this.handleSetDecade}
+                    handleSetDecade={this.handleSetDecade} 
                 />
                 <ModalWindow 
                     showModal={this.state.showModal}
