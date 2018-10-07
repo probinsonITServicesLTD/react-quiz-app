@@ -25,7 +25,7 @@ export default class App extends React.Component{
         category: 'movies',
         questionsArray : [],
         currentQuizNumber: 0,
-        showModal : false,
+        showModal : true,
         showAnswer : false,
         subcat1:'80'
     }
@@ -157,6 +157,12 @@ export default class App extends React.Component{
          })
     }
 
+    closeModal=()=>{
+      this.setState({
+          showModal : false
+      })
+    }
+
     render(){
         return(
             <div>
@@ -171,6 +177,7 @@ export default class App extends React.Component{
                     showModal={this.state.showModal}
                     questionCounter={this.state.questionCounter}
                     score={this.state.score}
+                    closeModal={this.closeModal}
                 >
                 </ModalWindow>
                 <div className="row">

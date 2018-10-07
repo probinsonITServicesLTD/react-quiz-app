@@ -13,7 +13,7 @@ const Header = (props) =>{
                 Question = {props.questionCounter}
             </div>                       
             <div className="radio-container">      
-                <div className="radio-buttons" onChange={props.handleSetMoviesOrTVShows.bind(this)}>
+                {/*<div className="radio-buttons" onChange={props.handleSetMoviesOrTVShows.bind(this)}>
                     <label className="radio-element">TV Shows
                         <input type="radio" name="format" value="tvshows"/>
                         <span className="checkmark"></span>
@@ -22,7 +22,7 @@ const Header = (props) =>{
                         <input type="radio" name="format" value="movies" defaultChecked/>
                         <span className="checkmark"></span>
                     </label>
-                </div>
+                </div>*/}
                 <div onChange={props.handleSetDecade.bind(this)}>
                     <label className="radio-element">50's
                         <input type="radio" name="decade" value="50"/>
