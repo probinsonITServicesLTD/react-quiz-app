@@ -1,0 +1,98 @@
+.question{
+    background: white;
+    border-radius:15px;
+    height:200px;
+    margin-bottom:10px;
+    width:800px;
+    max-width: 800px;
+    min-width: 800px;
+    text-align: center;
+}
+
+.question span{
+    padding:20px;
+    font-size: 40px;
+    color:black;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+.options{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.base{
+    flex: 45%;
+    color:white;
+    margin:10px;
+    border-radius: 10px;
+    border: none;
+    height:50px;
+    font-size: $m-size;
+    width:140px;
+}
+
+.option{
+    background: #BF360C;
+    background: -moz-linear-gradient(0% 100% 90deg, #E65100,#BF360C);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E65100), to(#BF360C));
+}
+
+.option:hover{
+    background: #37474F;
+    background: -moz-linear-gradient(0% 100% 90deg, #37474F,#263238);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#37474F), to(#263238));
+    cursor: pointer; 
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+@keyframes glow-green {
+    0% { background-color: #32CD32; box-shadow: 0 0 3px #32CD32 }
+    50% { background-color: #008000; box-shadow: 0 0 3px #008000; }
+    100% { background-color: #32CD32; box-shadow: 0 0 3px #32CD32; }
+}
+
+@keyframes glow-red {
+    0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+    50% { background-color: #FF0000; box-shadow: 0 0 3px #FF0000; }
+    100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+.answer-false{
+    position: relative;
+    -webkit-animation: glow-red 2s normal forwards; /* Safari 4.0 - 8.0 */
+    animation: glow-red 2s normal forwards;
+}
+
+/*
+.answer-false:after{
+    position: absolute;
+    content:"\1F5D9";
+    color:black;
+    right:0px;
+    font-size:100px;
+    top:-40px;
+}
+
+*/
+
+.answer-true{
+    position: relative;
+    -webkit-animation: glow-green 2s normal forwards; /* Safari 4.0 - 8.0 */
+    animation: glow-green 2s normal forwards;
+}
+
+.answer-true:after{
+    position: absolute;
+    content:"\2714";
+    color:green;
+    right:0px;
+    font-size:100px;
+    top:-25px;
+}
+

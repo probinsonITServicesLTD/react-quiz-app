@@ -3,13 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "node-sass": "^4.9.3",
+    "normalize": "^0.3.1",
+    "normalize.css": "^8.0.0",
     "react": "^16.5.2",
+    "react-app-rewire-sass-modules": "^1.1.7",
+    "react-app-rewired": "^1.6.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "2.0.4"
+    "react-modal": "^3.6.1",
+    "react-scripts": "2.0.4",
+    "sass-loader": "^7.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
