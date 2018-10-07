@@ -25,7 +25,7 @@ export default class App extends React.Component{
         category: 'movies',
         questionsArray : [],
         currentQuizNumber: 0,
-        showModal : true,
+        showModal : false,
         showAnswer : false,
         subcat1:'80'
     }
