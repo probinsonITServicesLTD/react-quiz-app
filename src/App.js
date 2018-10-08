@@ -159,7 +159,10 @@ export default class App extends React.Component{
 
     closeModal=()=>{
       this.setState({
-          showModal : false
+          showModal : false,
+          showAnswer: false,
+          question : 'Select a new quiz in the top right if you want to continue',
+          options: []
       })
     }
 
